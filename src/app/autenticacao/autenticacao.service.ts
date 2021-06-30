@@ -9,7 +9,7 @@ export class AutenticacaoService {
   constructor(private httpClient: HttpClient) {}
 
   autencicar(usuario: string, senha: string): Observable<any> {
-    return this.httpClient.post('htto://localhost:3000/user/login', {
+    return this.httpClient.post('http://localhost:3000/user/login', {
       userName: usuario,
       password: senha,
     });
